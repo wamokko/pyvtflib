@@ -1,0 +1,21 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "pyvtflib"
+version = "1.0.0"
+description = "Pure-Python, dependency-free reader/writer for Valve's VTF and VMT file formats"
+readme = "README.md"
+requires-python = ">=3.7"
+license = {text = "LGPL-2.1-or-later"}
+authors = [{name = "pyvtflib contributors"}]
+keywords = ["vtf", "vmt", "valve", "source-engine", "texture", "material"]
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "Operating System :: OS Independent",
+    "Topic :: Multimedia :: Graphics",
+]
+
+[tool.setuptools.packages.find]
+include = ["pyvtflib*"]
